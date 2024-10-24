@@ -1,0 +1,54 @@
+@startuml
+title UML-діаграма розгортання гри MirrorMaze
+
+left to right direction
+skinparam componentStyle uml1
+
+node "Client" {
+    node "Game Application" {
+        component MainMenu
+        component GameplayLogic
+        component NPCInteractions
+        component CombatSystem
+        component InventorySystem
+        component WorldExploration
+        component SaveLoadSystem
+    }
+
+    node "Data Management" {
+        component FileManager
+        component ProgressManager
+        component SettingsManager
+    }
+
+    node "Data Processing" {
+        component DataProcessor
+    }
+
+    node "Data Storage" {
+        database "Local Game Saves"
+        database PlayerSettings
+    }
+}
+
+entity "Keyboard" as kbd
+entity "Mouse" as mouse
+
+kbd --> MainMenu
+kbd --> GameplayLogic
+mouse --> MainMenu
+mouse --> GameplayLogic
+
+MainMenu --> GameplayLogic
+GameplayLogic --> NPCInteractions
+GameplayLogic --> CombatSystem
+GameplayLogic --> InventorySystem
+GameplayLogic --> WorldExploration
+SaveLoadSystem --> ProgressManager
+SaveLoadSystem --> SettingsManager 
+ProgressManager --> FileManager
+SettingsManager --> FileManager
+FileManager --> DataProcessor
+DataProcessor --> "Local Game Saves"
+DataProcessor --> "PlayerSettings"
+@enduml
