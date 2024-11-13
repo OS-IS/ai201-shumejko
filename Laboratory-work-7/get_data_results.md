@@ -1,1 +1,1 @@
-![task1_2](screenshots/task7.jpg)
+![task1_2](screenshots/task1_2.jpg)
