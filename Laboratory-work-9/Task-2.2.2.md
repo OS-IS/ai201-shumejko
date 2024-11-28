@@ -8,13 +8,3 @@
 ![Screenshot_2](https://github.com/user-attachments/assets/a8edbf21-191c-4cdd-b987-1eb92dde2cce)
 
 
-### 2.2.3 Створити функцію user_register на мові програмування PL/pgSQL, яка буде pабороняти створювати пароль, якщо він є у таблиці гірших паролів.
-![Screenshot_3](https://github.com/user-attachments/assets/ebc105bb-4428-4d80-90fa-98aba3207678)
-
-
-### 2.2.4 Провести тестування роботи функції user_register за двома тестовими сценаріями (правильний та неправильний).
-![Screenshot_4](https://github.com/user-attachments/assets/e30ac875-111c-4589-8a26-c33fe75dacac)
-
-
-
-
